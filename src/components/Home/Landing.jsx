@@ -50,7 +50,7 @@ const Landing = () => {
             </h1>
             <h5 className="mb-6 text-3xl truncate max-w-[200px] font-bold tracking-tight text-[#000] mt-5 uppercase">
               {/* <%= news.type_of_news %> */}
-              {featured.description}
+              {featured.title}
             </h5>
 
             <p className="mb-2 font-normal text-[#000] truncate max-w-[200px] md:w-full lg:w-[300px]">
@@ -78,7 +78,8 @@ const Landing = () => {
                     {bla.title}
                   </h5>
                   <p className="mb-3 font-normal text-gray-700 truncate ...">
-                    {bla.description}
+                    dangerouslySetInnerHTML=
+                    {{ __html: bla.description }}
                   </p>
                   <Link
                     to={`/news/${bla._id}`}
